@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+      <title>Aula 10-Exercicio</title>
+  </head>
+  <body>
+    <h1>Exercicio Aula 10</h1>
+    <div class="container">
+      <form id="form">
+        <div class="form-group">
+          <label>Nome:
+            <input type="text" id="form-nome" class="form-control" placeholder="Insira seu nome" required>
+          </label>
+        </div>
+        <div class="form-group">
+          <label>Idade:
+            <input type="number" id="form-idade" class="form-control" placeholder="Digite sua idade" title="Campo idade é obrigatorio" required >
+          </label>
+        </div>
+        <div class="form-group">
+          <label>Cor Preferida:
+            <input type="text" id="form-Corpreferida" class="form-control" placeholder="Digite sua cor preferida" title="Campo Cor Preferida é obrigatorio" required required>
+          </label>
+        </div>
+        <button id="btn-submit" type="submit" class="btn btn-primary">Registrar</button>
+        <div id="erros"></div>           
+      </form>
+    </div>
+      
+    <div class="container">
+      <ul id="lista-adicionar" class="list-group">
+      </ul>
+      <div id="descricao"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
